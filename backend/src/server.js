@@ -8,7 +8,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://ai-resume-enhancer-one.vercel.app/", // Your live frontend URL
+      "https://ai-resume-enhancer-one.vercel.app", // Your live frontend URL
       "http://localhost:3000", // Allow your local machine for testing
     ],
     methods: ["GET", "POST"],
