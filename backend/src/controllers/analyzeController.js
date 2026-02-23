@@ -20,7 +20,7 @@ exports.analyzeResume = async (req, res) => {
     // ... rest of your code (model config and prompt) ...
 
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",
+      model: process.env.GEMINI_MODEL || "gemini-2.5-flash",
       generationConfig: { responseMimeType: "application/json" },
     });
 
