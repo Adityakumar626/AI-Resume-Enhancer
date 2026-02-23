@@ -22,10 +22,13 @@ export default function ResumeAnalyzer() {
     formData.append("jobDescription", jd);
 
     try {
-      const response = await fetch("http://localhost:8000/api/analyze", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/analyze`,
+        {
+          method: "POST",
+          body: formData,
+        },
+      );
       const data = await response.json();
       setResult(data);
     } catch (err) {
