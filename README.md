@@ -2,8 +2,6 @@
 
 AI Resume Tailor is a Generative AI-powered web application that helps job seekers tailor their resumes according to specific job descriptions. The system analyzes uploaded resumes and job posts, calculates a match score, identifies missing skills, and provides AI-generated feedback to improve ATS compatibility and recruiter appeal.
 
-Built as part of **GDG Recruitment Project Submission**.
-
 ---
 
 # 📌 Problem Statement
